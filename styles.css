@@ -31,13 +31,11 @@
     
   }
 
-  //.logo {
-    width: 36px;
-    height: 36px;
+
  
 
 
-  }
+  
   nav {
     margin: 0.5rem auto;
     max-width: 960px;
@@ -175,6 +173,10 @@ i:hover {
 
    }
 
+   a {
+    text-decoration: none;
+   }
+
   img, iframe {
       width: 100%;
       max-width: 300px;
@@ -236,7 +238,7 @@ i:hover {
   footer {
     background-color: var(--color-header);
     color: #c0c0c0;
-    //height: 4rem;
+   
     text-align: right;
     margin-top: 2px;
     padding: 2rem;
