@@ -47,4 +47,41 @@ function FractalishTree() {
 }
 
 FractalishTree();
-//setInterval(FractalishTree, 8000);
+setInterval(FractalishTree, 8000);
+
+
+        const canvasg = document.getElementById('myCanvas');
+        const ctxg = canvasg.getContext('2d');
+
+        function resizeCanvas() {
+            canvasg.width = canvasg.parentElement.clientWidth;
+            canvasg.height = canvasg.parentElement.clientHeight;
+            draw1(); // Redraw the canvas after resizing
+          draw2();
+        }
+
+
+
+        function draw1() {
+            // Clear the canvas
+            ctxg.clearRect(0, 0, canvasg.width, canvasg.height);
+            
+            ctxg.fillStyle = 'rgba(78, 205, 196, 0.6)';
+            ctxg.fillRect(0, 0, canvasg.width, canvasg.height);
+
+            // Cubic curves example
+            ctxg.beginPath();
+            ctxg.moveTo(canvasg.width,  canvasg.height);
+            ctxg.bezierCurveTo(canvasg.width, (canvasg.height/4),2*( canvasg.width/3), 2*(canvasg.height/3), canvasg.width /3, canvasg.height );
+
+            ctxg.fillStyle = 'rgba(41, 47, 54, 0.6)';
+            ctxg.fill();
+                      ctxg.bezierCurveTo(canvasg.width /10, canvasg.height, canvasg.width/2, canvasg.height/10, canvasg.width , canvasg.height/3);
+        
+
+                       ctxg.fillStyle = 'rgba(41, 47, 54, 0.4)';
+            ctxg.fill();
+     
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas(); // Initial resize
