@@ -122,6 +122,11 @@ main {
   max-width: 960px;
   margin: 0 auto;
 }
+
+/* .container-main {
+ 
+  margin: 0 auto;
+} */
 .top {
   min-height: 100px;
 }
@@ -294,17 +299,17 @@ footer {
 
 
 .responsive-img {
-  max-width: 100%;  /* Zdjęcie nigdy nie będzie szersze niż jego rodzic */
-  height: auto;     /* Zachowa proporcje, nie będzie rozciągnięte */
-  display: block;   /* Usuwa dziwną przerwę pod zdjęciem */
-  border-radius: 15px; /* Skoro pytałaś o radius - tutaj też zadziała! */
+  max-width: 100%;  
+  height: auto;     
+  display: block;   
+  border-radius: 15px; 
   /*margin-bottom: 10px;*/
 }
 
 .btn-github {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #24292e; /* Kolor GitHuba */
+  background-color: #24292e; 
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -429,3 +434,11 @@ footer {
        grid-row: 2;     
   }
 }
+
+
+
+
+
+
+
+
