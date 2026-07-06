@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>;za Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles2.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -32,62 +33,127 @@
   </header>
 
   <main>
-    <div class="top"></div>
-
-<div class="container-grid">
-
-
-  <div class="content">
-  <h3><i class="fas fa-money-bill-wave"></i> BudzetApp: Web Application</h3>
-  <br>
-  <img src="images/portfolio/budzetApp.png" alt="Opis zdjęcia" class="responsive-img">
-  </div>
-  <div class="sidebar">
-  <h3 class="project-subtitle"><i class="fa-solid fa-window-restore"></i>
-  Web Application </h3>
-    <br>
-
-    <p class="project-description">
-      This <strong>full-stack web application</strong> was developed as a university project to streamline budget tracking. </p>
-      <br>
-     <p> It operates on a <strong>Client-Server architecture</strong>, combining a Java backend 
-      with an interactive web interface to manage and analyze financial data in real-time.
-    </p>
-    <br>
-   <h1> <i class="fab fa-java"></i> <span>Java</span></h1>
-
     
-  </div>
-  <div class="adsa">  <h3 class="project-subtitle"><i class="fa-solid fa-list-check"></i>  Key Features</h3>
-    <br>
-   
-    <p><strong>Modular Web Interface:</strong> A dynamic frontend built to handle CRUD operations for income, expenses, and departments without full page reloads.</p>
-  
-    <p><strong>Automated Reporting & SMTP:</strong> A module that aggregates database records into monthly reports, featuring a direct "Send to Email" function integrated via SMTP.</p>
+           <div class="top"></div>
+
+            <div class="project-header">
+            <h1 style="font-size: 3.5rem; color: #333; margin-top: 2rem;">BudzetApp: Web Application</h1>
+            <p style="font-size: 1.5rem; margin-bottom: 2rem; color: grey">Web Application for Financial Management</p>
+              </div>
+
+    <div class="hero-banner">
+           
+        <div>
+          <img src="images/portfolio/budzetApp.png" alt="Opis zdjęcia"
+            style="width: 100%; height: auto; object-fit: contain; flex-shrink: 0;">
+        </div>
+        
+          <div class="bar">
+            <span class="bar_content">
+              IN THE LAB. Engineering Thesis in progress. 
+              
+            </span>
+            
+          </div>
+        
+
+
+      <div class="hero-content">
+        <h1>Project Repository</h1>
+        <p>This site is a live demo.</p>
+        <p>IN THE LAB. Engineering Thesis in progress.</p>
+        <a href=""  class="github-btn" style="cursor: not-allowed; opacity: 0.5;" target="_blank">View on GitHub <i style="margin-left: 10px;" class="fab fa-github"></i></a>
+        
+      </div>
+
+
+    </div>
+
+
+ 
+</div>
+
+
+
+<div class="tech-stack-section">
+
+  <h2>Full Technology Stack</h2>
+  <p style="font-size: 1rem; margin-bottom: 20px; color: grey">Built with:</p>
+
+  <div class="tech-grid">
+    <!-- FRONTEND -->
+    <div class="tech-badge badge-frontend">
+      <span class="tech-label">FRONTEND</span>
+      <span class="tech-name">HTML5</span>
+    </div>
     
-    <p><strong>Notification System:</strong> A manual trigger system that allows users to send email reminders for overdue payments directly from the web dashboard.</p>
+    <div class="tech-badge badge-frontend">
+      <span class="tech-label">FRONTEND</span>
+      <span class="tech-name">CSS3</span>
+    </div>
     
-    <p><strong>Spring Security:</strong> Secure access control ensuring all management modules are protected by an authentication layer and session management.</p>
-  <br><br>
-  <a href="https://github.com/FifthElement5/budzetApp-web"class="btn-github" target="_blank">
-    View on GitHub
-    <i class="fa-brands fa-github"></i>
-  </a>
-  
-  </div>
+    <div class="tech-badge badge-frontend">
+      <span class="tech-label">FRONTEND</span>
+      <span class="tech-name">JavaScript</span>
+    </div>
+
+    <!-- BACKEND -->
+    <div class="tech-badge badge-backend">
+      <span class="tech-label">BACKEND</span>
+      <span class="tech-name">Java 17</span>
+    </div>
     
-      <div class="ads">  <h3 class="project-subtitle"><i class="fa-solid fa-cubes"></i>Technical Stack</h3>
-  
-    <br>
-    <p><strong>Backend:</strong> Java 17, Spring Boot (Spring Security, Spring Data JPA, JavaMailSender)</p>
-    <p><strong>Database:</strong> MySQL (Relational data persistence)</p>
-    <p><strong>Frontend:</strong> HTML5, CSS3, JavaScript</p>
-    <p><strong>Environment:</strong> IntelliJ IDEA, Maven, MySQL Workbench</p>
-  
-   
+    <div class="tech-badge badge-backend">
+      <span class="tech-label">BACKEND</span>
+      <span class="tech-name">Spring Boot</span>
+    </div>
+
+    <div class="tech-badge badge-backend">
+      <span class="tech-label">BACKEND</span>
+      <span class="tech-name">Spring Security</span>
+    </div>
+
+    <div class="tech-badge badge-backend">
+      <span class="tech-label">BACKEND</span>
+      <span class="tech-name">Spring Data JPA</span>
+    </div>
+
+    <div class="tech-badge badge-backend">
+      <span class="tech-label">BACKEND</span>
+      <span class="tech-name">JavaMailSender</span>
+    </div>
+
+    <!-- DATABASE -->
+    <div class="tech-badge badge-database">
+      <span class="tech-label">DATABASE</span>
+      <span class="tech-name">MySQL</span>
+    </div>
+
+    <!-- ENVIRONMENT / INFRA -->
+    <div class="tech-badge badge-infra">
+      <span class="tech-label">ENV</span>
+      <span class="tech-name">IntelliJ IDEA</span>
+    </div>
+    
+    <div class="tech-badge badge-infra">
+      <span class="tech-label">INFRA</span>
+      <span class="tech-name">Maven</span>
+    </div>
+
+    <div class="tech-badge badge-infra">
+      <span class="tech-label">ENV</span>
+      <span class="tech-name">MySQL Workbench</span>
+    </div>
   </div>
 
-   </div>
+</div>
+
+
+
+
+
+
+
 <div class="top"></div>
         <div class="container">
       <section id="contact">

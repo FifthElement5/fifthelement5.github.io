@@ -382,3 +382,43 @@ padding: 3rem 0 1rem 0;
     transform: translateY(0); /* Tekst wraca na swoje właściwe miejsce */
   }
 }
+
+
+
+
+/* body,
+html { overflow-x: hidden; } */
+
+.bar {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 25px 0;
+
+  background-color: white;
+  opacity: 0.8;
+  color: var(--color-3);
+  
+
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.bar_content {
+  display: block; /* Important to give the content a width */
+
+  width: 100%;
+  transform: translateX(100%); /* Animation start out of the screen */
+
+  /* Add the animation */
+  animation: move 40s linear infinite /* infinite make reapeat the animation indefinitely */;
+}
+
+/* Create the animation */
+@keyframes move {
+  to { transform: translateX(-100%); }
+}

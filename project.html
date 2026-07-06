@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,8 @@
       <img class="logo1" src="images/portfolio/logo-kk.png" alt="logo" />
       <div class="logo-container">
         <a href="mailto:i.m.galazewska@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/FifthElement5" target="_blank"><i style="margin-left: 10px;" class="fab fa-github"></i></a>
+        <a href="https://github.com/FifthElement5" target="_blank"><i style="margin-left: 10px;"
+            class="fab fa-github"></i></a>
       </div>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -30,16 +32,18 @@
   <main>
     <div class="top"></div>
 
-    <div class="portfolio-container">
-      <div class="project-title">
+     <div class="project-title">
         <h1>Embedded Systems</h1>
         <h1> ColorTap: Button-Controlled Ambient Lighting</h1>
       </div>
 
+    <div class="portfolio-container">
+     
+
       <div class="item-static">
-        <img src="images/project/projekt_systemy.png"  alt="Static Project Image">
+        <img src="images/project/projekt_systemy.png" alt="Static Project Image">
       </div>
-      
+
       <div class="item-gallery">
         <div class="pic-ctn">
           <img src="images/project/e1.png" alt="Step 1" class="pic">
@@ -49,42 +53,48 @@
           <img src="images/project/e5.png" alt="Step 5" class="pic">
         </div>
       </div>
-     
+
       <div class="item-summary">
-      <h3>Technical Overview</h3>
-      <br>
+        <h3>Technical Overview</h3>
+        <br>
 
-<p>Core: ATmega328P (Arduino UNO R3)</p>
+        <p>Core: ATmega328P (Arduino UNO R3)</p>
 
-    <p><strong>Microcontroller:</strong> ATmega328P managing real-time LED data protocols.</p>
+        <p><strong>Microcontroller:</strong> ATmega328P managing real-time LED data protocols.</p>
 
-    <p><strong>Input:</strong> 3x tactile switches using internal MCU pull-up resistors for mode selection.</p>
+        <p><strong>Input:</strong> 3x tactile switches using internal MCU pull-up resistors for mode selection.</p>
 
-    <p><strong>Power Design:</strong> Dual-rail system – 5V/3A external PSU for LEDs with common ground to the MCU.</p>
+        <p><strong>Power Design:</strong> Dual-rail system – 5V/3A external PSU for LEDs with common ground to the MCU.
+        </p>
 
-    <p><strong>Firmware:</strong> Custom C++ logic featuring software debouncing and state-machine mode switching.</p>
+        <p><strong>Firmware:</strong> Custom C++ logic featuring software debouncing and state-machine mode switching.
+        </p>
 
-    <p><strong>Display:</strong> 60x WS2812B addressable RGB LEDs.</p>
-    <br>
+        <p><strong>Display:</strong> 60x WS2812B addressable RGB LEDs.</p>
+        <br>
 
-            <p><strong>ColorTap </strong>is a dedicated hardware controller designed for responsive ambient lighting, 
-              powered by the ATmega328P microcontroller on an Arduino UNO R3 platform. 
-              The core of the system is a custom firmware implementation that manages a high-speed data stream for 60 addressable WS2812B RGB LEDs.</p>
+        <p><strong>ColorTap </strong>is a dedicated hardware controller designed for responsive ambient lighting,
+          powered by the ATmega328P microcontroller on an Arduino UNO R3 platform.
+          The core of the system is a custom firmware implementation that manages a high-speed data stream for 60
+          addressable WS2812B RGB LEDs.</p>
 
-              <p>On the logic side, the ATmega328P handles manual GPIO polling with integrated software debouncing algorithms, eliminating mechanical switch noise. </p>
-                <p>This allows the state-machine logic to seamlessly transition between power states, static color palettes, and complex dynamic animations without latency or flickering. The result is a robust, 
-                MCU-driven lighting solution that demonstrates precise control over addressable LED protocols and embedded system power management</p>
-       
+        <p>On the logic side, the ATmega328P handles manual GPIO polling with integrated software debouncing algorithms,
+          eliminating mechanical switch noise. </p>
+        <p>This allows the state-machine logic to seamlessly transition between power states, static color palettes, and
+          complex dynamic animations without latency or flickering. The result is a robust,
+          MCU-driven lighting solution that demonstrates precise control over addressable LED protocols and embedded
+          system power management</p>
+
 
       </div>
 
       <div class="item-text-1">
-        <h1><i class="fas fa-code"></i>  
+        <h1><i class="fas fa-code"></i>
           <span>C++</span>
       </div>
 
       <div class="item-text-2">
-          <h1><i class="fas fa-microchip"></i></h1>
+        <h1><i class="fas fa-microchip"></i></h1>
       </div>
 
     </div>
@@ -104,7 +114,7 @@
     </div>
 
     <div style="max-width: 960px; margin: 20px auto; padding: 0 20px;">
-        <script src="https://gist.github.com/FifthElement5/1f8bb57f3a69cdffbfbd10f2d634f241.js"></script>
+      <script src="https://gist.github.com/FifthElement5/1f8bb57f3a69cdffbfbd10f2d634f241.js"></script>
     </div>
 
     <footer>
@@ -113,4 +123,5 @@
     </footer>
   </main>
 </body>
+
 </html>
