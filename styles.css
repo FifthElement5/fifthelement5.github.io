@@ -4,6 +4,7 @@
   --color-3: #FF6B6B;
   --color-4: #FFE66D;
   --color-5: rgba(78, 205, 196, 0.3);
+  --color-6: #4ECDC4;
 }
 
 * {
@@ -436,7 +437,11 @@ footer {
 }
 
 
-
+.project-header {
+  text-align: left;
+  margin-bottom: 20px;
+  margin: auto 0;
+}
 
 
 

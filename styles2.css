@@ -1,33 +1,9 @@
 /*portal.html*/
 
 
-
-
-/* .gallery {
-  --size: min(60vmin, 600px);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 
-    0 0 10px #0002,
-    0 20px 40px -20px #0004;
-  width: var(--size);
-  height: calc(var(--size) * 0.65);
-  background: #fff;
-  border: 6px solid #fff;
-  display: grid;
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 1fr 1fr;
-  overflow: hidden;
-  gap: 6px;
-} */
-
-
 .gallery {
-  --size: min(60vmin, 600px); /* Troszkę zmniejszamy limit, żeby ładnie leżała obok tekstu */
-  position: relative; /* ZMIANA: z absolute na relative */
-  /* Usuwamy stąd: top, left, transform */
+  --size: min(60vmin, 600px); 
+  position: relative; 
   
   box-shadow: 
     0 0 10px #0002,
@@ -41,14 +17,14 @@
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
   gap: 6px;
-  flex-shrink: 0; /* Zabezpieczenie, żeby galeria nie kurczyła się za mocno */
+  flex-shrink: 0; 
 }
 
 .gallery img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: left center; /* NOWOŚĆ: Pokazuje zdjęcie od lewej krawędzi, aby napisy na początku były widoczne */
+  object-position: left center; 
 }
 
 @keyframes moveHorizontal {
@@ -229,7 +205,7 @@
 .github-btn {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #24292e; /* Klasyczny ciemny kolor GitHuba */
+  background-color: #24292e; 
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
@@ -238,14 +214,12 @@
 }
 
 .github-btn:hover {
-  background-color: #1cad71; /* Kolor po najechaniu myszką */
+  background-color: var(--color-6); 
 
 }
 
 
 /*cards */
-
-@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
   
 body {
   background: #ffffff;
@@ -261,7 +235,7 @@ body {
   padding: 3rem 0;
 }
 .card-portal {
-  --grad: rgb(48, 236, 236), blue;
+  --grad:  blue, rgb(48, 236, 236);
   padding: 2.5rem;
   background-image: linear-gradient(to bottom left, #e0e4e5, #f2f6f9);
   border-radius: 2rem;
@@ -273,6 +247,7 @@ body {
   box-shadow: 
     inset -2px 2px hsl(0 0 100% / 1),
     -20px 20px 40px hsl(0 0 0 / .25) ;
+  
   
   .title-portal {
     font-size: 1.5rem;
@@ -308,6 +283,8 @@ body {
 }
 
 
+
+
 /* Kontener, który nie pozwala na pokazanie tekstu, gdy ten jest pod linią kart */
 .title-wrapper-portal {
   grid-area: title; /* Upewnij się, że pasuje do Twojego grid-template */
@@ -319,7 +296,7 @@ body {
 .title-portal {
   display: inline-block;
   transform: translateY(100%); /* Tekst schowany na samym dole */
-  animation: wjazdZDolu 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: wjazdZDolu 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 /* Przepis na płynny ruch z dołu do góry */
