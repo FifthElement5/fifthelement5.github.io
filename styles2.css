@@ -158,27 +158,19 @@
   animation-fill-mode: forwards;
 }
 
-/* .hero-banner {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-  background-image: linear-gradient(to bottom, rgba(111, 189, 184, 0.4), #ffffff);
- 
-} */
 
 /* 1. Ustawiamy baner jako elastyczny rząd */
 .hero-banner {
   position: relative;
   width: 100%;
-  min-height: 500px; /* Zmieniamy na min-height, żeby na mniejszych ekranach nic się nie ucięło */
+  min-height: 500px; 
   overflow: hidden;
   background-image: linear-gradient(to bottom, rgba(111, 189, 184, 0.5), #ffffff);
   
-  display: flex; /* Włączamy układ obok siebie */
-  align-items: center; /* Środkujemy elementy w pionie */
-  justify-content: space-around; /* Rozsuwamy tekst i galerię z ładnym odstępem */
-  padding: 40px; /* Odstęp od krawędzi baneru */
+  display: flex; 
+  align-items: center; 
+  justify-content: space-around; 
+  padding: 40px; 
   box-sizing: border-box;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   gap: 50px;
@@ -199,6 +191,19 @@
   font-size: 1.1rem;
   margin-bottom: 25px;
   line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    flex-direction: column; /* Zmienia układ z poziomego na pionowy */
+    text-align: center;     /* Środkuje tekst dla lepszego wyglądu */
+    gap: 30px;              /* Zmniejsza odstęp między tekstem a galerią */
+    padding: 20px;          /* Zmniejsza wewnętrzne marginesy na telefonach */
+  }
+
+  .hero-content {
+    max-width: 100%;        /* Tekst może zająć pełną dostępną szerokość */
+  }
 }
 
 /* 3. Styl dla ładnego guzika GitHub */
@@ -223,6 +228,7 @@
   
 body {
   background: #ffffff;
+  font-family: poppins, sans-serif;
 
 }
 
@@ -232,7 +238,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
   gap: 2rem;
-  padding: 3rem 0;
+padding: 3rem 0 1rem 0;
 }
 .card-portal {
   --grad:  blue, rgb(48, 236, 236);
@@ -278,52 +284,42 @@ body {
     grid-area: bar;
     height: 2px;
     background-image: linear-gradient(90deg, var(--grad));
-/*     margin-inline: -1.5rem; */
+
   }
 }
 
-
-
-
-/* Kontener, który nie pozwala na pokazanie tekstu, gdy ten jest pod linią kart */
 .title-wrapper-portal {
-  grid-area: title; /* Upewnij się, że pasuje do Twojego grid-template */
+  grid-area: title; 
   overflow: hidden;
   display: inline-block;
 }
 
-/* Stan początkowy i start animacji dla tekstu */
 .title-portal {
   display: inline-block;
   transform: translateY(100%); /* Tekst schowany na samym dole */
   animation: wjazdZDolu 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
-/* Przepis na płynny ruch z dołu do góry */
-@keyframes wjazdZDolu {
-  to {
-    transform: translateY(0); /* Tekst wraca na swoje właściwe miejsce */
-  }
-}
 
 /*tech stack */
 
-/* Główna sekcja na białym tle */
 .tech-stack-section {
   background-color: #ffffff; 
-  padding: 2rem 1rem;
+  padding-bottom: 2rem; 
   font-family: system-ui, sans-serif;
 }
 
 .tech-stack-section h2 {
-  color: #1a1a1a;
-  font-size: 1.75rem;
+  color: var(--color-header);
+  font-size: 2rem;
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
   font-weight: 700;
+  display: inline-block; 
+  transform: translateY(50%);
+  animation: wjazdZDolu 1.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
-/* Responsywna siatka - kafelki same układają się do ekranu */
 .tech-grid {
   display: flex;
   flex-wrap: wrap;
@@ -338,7 +334,7 @@ body {
   padding: 0.6rem 1rem;
   border-radius: 0.375rem;
   border: 1px solid;
-  background-color: #ffffff; /* Czyste białe tło zamiast czarnego */
+  background-color: #ffffff; 
   font-size: 0.9rem;
   box-sizing: border-box;
 }
@@ -348,7 +344,7 @@ body {
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  opacity: 0.7; /* Lekko wyraźniejsze na białym tle */
+  opacity: 0.7; 
 }
 
 /* Nazwy technologii po prawej */
@@ -381,4 +377,8 @@ body {
 }
 .badge-infra .tech-label { color: #8c5200; }
 
-
+@keyframes wjazdZDolu {
+  to {
+    transform: translateY(0); /* Tekst wraca na swoje właściwe miejsce */
+  }
+}

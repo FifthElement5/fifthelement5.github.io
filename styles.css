@@ -24,14 +24,12 @@ header {
   width: 100%;
   background-color: var(--color-header);
   min-width: 480px;
-  /* border: 1px solid yellow; */
   z-index: 999;
 }
 
 .logo1 {
   width: 50px;
   height: 50px;
-  /* border: 1px solid orange; */
   margin: 10px 48px 10px 16px;
 }
 
@@ -116,7 +114,6 @@ i:hover {
   max-width: 400px;
   min-width: 300px;
   margin: 10% 15% 10%;
-  /* border: 1px solid blue; */
 }
 
 main {
@@ -124,16 +121,11 @@ main {
   margin: 0 auto;
 }
 
-/* .container-main {
- 
-  margin: 0 auto;
-} */
 .top {
   min-height: 100px;
 }
 
 .title, .title-p {
-  /* -font-size: 3rem; */
   color: var(--color-header);
   text-align: left;
   background: linear-gradient(to right, rgba(41,47,54 , 0.8) 20%, rgba(255,230,107 , 0.9) 40%, rgba(255,230,107 , 0.6) 60%, rgba(41,47,54 , 0.8) 80%);
@@ -304,7 +296,6 @@ footer {
   height: auto;     
   display: block;   
   border-radius: 15px; 
-  /*margin-bottom: 10px;*/
 }
 
 .btn-github {
@@ -440,7 +431,7 @@ footer {
 .project-header {
   text-align: left;
   margin-bottom: 20px;
-  margin: auto 0;
+  margin: auto 0; 
 }
 
 
